@@ -16,13 +16,13 @@ router.post("/create",authmiddleware.verifyToken,accountController.createAccount
  * -POST getAllAccount
  * -/api/accounts/account
  */
-router.post("/account",authmiddleware.verifyToken,accountController.getAccount)
+router.get("/account",authmiddleware.verifyToken,accountController.getAccount)
 
 /**
  * -POST getBalanace
  * -/api/accounts/balance/accountId
  */
-router.post("/balance/:accountId",authmiddleware.verifyToken,accountController.getBalance)
+router.get("/balance/:accountId",authmiddleware.verifyToken,accountController.getBalance)
 
 
 
