@@ -17,7 +17,7 @@ app.use(cookieParser())
 
 app.get("/",(req,res) =>
 {
-    res.send("Bank Hudger Ledger Service Is Running 🏃‍♂️")
+    res.send("Bank Hudger Ledger Service Is Running ")
 })
 
 /**
